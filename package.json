@@ -9,12 +9,17 @@
     "build": "react-scripts build",
     "docs": "styleguidist server",
     "docs:build": "styleguidist build",
-    "lint": "eslint src/**/*.js"
+    "lint": "eslint src/**/*.js --fix"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "aws-tools": "^1.0.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.17.0",
+    "eslint-plugin-react": "^7.14.3",
     "live-server": "^1.2.1",
     "node-sass": "^4.12.0",
     "react": "^16.9.0",

@@ -2,12 +2,19 @@ import React from 'react';
 
 import './counter.scss'
 
+/**
+ * test
+ */
 class Counter extends React.Component {
   constructor(props) {
     super(props);
     this.state = { count: 0 };
   }
 
+  /**
+   * handles pressing the up button and increasing the count
+   * @param e
+   */
   handleUp = e => {
     let count = this.state.count + 1;
     this.updateCounter(count);
