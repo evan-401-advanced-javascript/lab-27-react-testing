@@ -17,18 +17,17 @@ afterEach(() => {
 });
 
 
-describe("up and down", () => {
-
+describe('up and down', () => {
   it('count should be incremented', () => {
-    let app = mount(<Counter />);
-    let button = app.find('#up');
+    const app = mount(<Counter />);
+    const button = app.find('#up');
     button.simulate('click');
     expect(app.state().count).toBe(1);
   });
 
   it('count should be decremented', () => {
-    let app = mount(<Counter />);
-    let button = app.find('#down');
+    const app = mount(<Counter />);
+    const button = app.find('#down');
     button.simulate('click');
     expect(app.state().count).toBe(-1);
   });
@@ -40,5 +39,9 @@ describe("up and down", () => {
     const label = container.querySelector('span');
     expect(label.textContent).toBe('0');
   });
-});
 
+  it('should show that the snapshot matches', () => {
+    const tree = renderer.create(<Counter />).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
+});

@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`up and down count should show a higher number in the DOM 1`] = `
+<section
+  className="counter"
+>
+  <a
+    className="down clicker"
+    href="#"
+    id="down"
+    onClick={[Function]}
+  >
+    -
+  </a>
+  <span
+    className="count "
+  >
+    0
+  </span>
+  <a
+    className="up clicker"
+    href="#"
+    id="up"
+    onClick={[Function]}
+  >
+    +
+  </a>
+</section>
+`;
+
+exports[`up and down should show that the snapshot matches 1`] = `
+<section
+  className="counter"
+>
+  <a
+    className="down clicker"
+    href="#"
+    id="down"
+    onClick={[Function]}
+  >
+    -
+  </a>
+  <span
+    className="count "
+  >
+    0
+  </span>
+  <a
+    className="up clicker"
+    href="#"
+    id="up"
+    onClick={[Function]}
+  >
+    +
+  </a>
+</section>
+`;
